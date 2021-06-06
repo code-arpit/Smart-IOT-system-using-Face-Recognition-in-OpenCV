@@ -27,7 +27,7 @@ class face_recog:
                 
                 id_text = self.labels[id_]
                 print(conf)
-                if not conf>75:
+                if not conf>70 and conf<90:
                     id_text = "Not Recognized"
                     
                 self.faceframe(x,y,w,h, id_text)
