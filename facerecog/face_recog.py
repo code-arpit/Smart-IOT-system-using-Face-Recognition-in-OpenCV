@@ -26,6 +26,7 @@ class face_recog:
                 id_, conf = self.recognizer.predict(roi_rect)
                 
                 id_text = self.labels[id_]
+                print(conf)
                 if not conf>75:
                     id_text = "Not Recognized"
                     
